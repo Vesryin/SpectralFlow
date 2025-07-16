@@ -3,105 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spectral Flow | A Music Sanctuary for Healing Souls</title>
+  <title>Spectral Flow | Healing Through Music & Motion</title>
   <style>
-    /* Reset & Base */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0d0d14, #1a1a29, #0d0d14);
-      color: #eee;
-      line-height: 1.6;
+      background: radial-gradient(circle, #0d0d14, #1a1a29);
+      color: #f0f0f0;
+      line-height: 1.7;
+      padding: 2rem;
     }
-    a { color: #ffcc00; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Layout */
-    .container { width: 90%; max-width: 1000px; margin: 2rem auto; }
-    header { text-align: center; padding-bottom: 2rem; border-bottom: 1px solid #333; }
-    header .logos { display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 1rem; }
-    .logo { max-height: 120px; width: auto; }
-
-    /* Sections */
-    section { background: rgba(0,0,0,0.75); margin: 2rem 0; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
-    section h2 { color: #ff00cc; margin-bottom: 1rem; }
-    section p { margin-bottom: 1rem; }
-    .mission ul { margin: 1rem 0 0 1.5rem; list-style: disc; }
-
-    /* Music & Social */
-    .music-player { text-align: center; margin: 4rem 0; } text-align: center; margin: 2rem 0; }
-    .social-links { text-align: center; margin: 1.5rem 0; }
-    .social-links a { margin: 0 0.75rem; font-weight: bold; }
-
-    /* Contact */
-    .contact-info { text-align: center; margin-top: 2rem; font-size: 1rem; }
-
-    /* Button */
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      color: #ff00cc;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      color: #ccc;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 3rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #ffcc00;
+    }
     .btn {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
       background: #ff0066;
       color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      text-decoration: none;
     }
-    .btn:hover { background: #e6005c; }
-
-    footer { text-align: center; padding: 1.5rem 0; border-top: 1px solid #333; font-size: 0.9rem; opacity: 0.7; }
+    .btn:hover {
+      background: #e6005c;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Spectral Flow</h1>
-      <p><em>A Music Sanctuary for Healing Souls</em></p>
-      <div class="logos">
-        <img src="IMAGES/spectral_flow_creative_energy_in_motiona.png" alt="Spectral Flow Logo" class="logo" />
-        <img src="IMAGES/_416a03ee-97a7-47d9-bf87-4bf6b588ef29.jpg" alt="Spectral Flow Rainbow Logo" class="logo" />
-        <img src="IMAGES/Specflo.png" alt="Spectral Flow Audio Odyssey Logo" class="logo" />
-      </div>
-    </header>
+  <header>
+    <h1>Spectral Flow</h1>
+    <p>Creative Energy in Motion</p>
+  </header>
 
-    <section class="bio">
-      <h2>About Richie</h2>
-      <p> Spectral Flow is a hybrid studio blending music, AI, and community to support healing and transformation. Founded by me, Richie, it’s a sanctuary for self-expression, recovery, and creativity through rhythm, sound, and connection.</p>
-      <p>Music became my lifeline: a healing drum that carried me through the darkest days. I stand on a foundation of integrity, honor, and empathy—lifting others as I’ve been lifted.</p>
-    </section>
-
-    <section class="mission">
-      <h2>Our Mission</h2>
-      <p>At Spectral Flow, we believe every soul has its own melody. We blend sound and soul, using <strong>rhythm</strong>, <strong>AI-guided insight</strong>, and <strong>community</strong> to turn pain into power and chaos into creative flow.</p>
-      <ul>
-        <li>Express your truth through beats and soundscapes</li>
-        <li>Heal with the pulse of community and technology</li>
-        <li>Transform trauma into art and find belonging</li>
-      </ul>
-      <a href="#" class="btn">Join the Flow</a>
-    </section>
-
-    <section class="music-player">
-      <h2>Listen to Vesryin</h2>
-      <iframe src="https://open.spotify.com/embed/artist/5DgEK7UE6HR5LUNgIUiavl" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </section>
-
-    <section class="social-links">
-      <h2>Connect</h2>
-      <a href="https://soundcloud.com/remedium-music-118476266" target="_blank">SoundCloud</a> |
-      <a href="https://www.facebook.com/SpectralFlowAudioOdyssey/" target="_blank">Facebook</a> |
-      <a href="https://open.spotify.com/artist/5DgEK7UE6HR5LUNgIUiavl" target="_blank">Spotify</a> |
-      <a href="https://www.youtube.com/@Vesryin" target="_blank">YouTube</a>
-    </section>
-
-    <section class="contact-info">
-      <p>📞 720-668-1208</p>
-      <p>✉️ <a href="mailto:remediummusic@gmail.com">remediummusic@gmail.com</a> | <a href="mailto:richiericholy@gmail.com">richiericholy@gmail.com</a></p>
-    </section>
-
-    <footer>
-      &copy; 2025 Remedium Music LLC — d/b/a Spectral Flow
-    </footer>
-  </div>
+  <section>
+    <h2>Welcome to Spectral Flow</h2>
+    <p>Spectral Flow is more than a name—it's a sanctuary where trauma meets transformation, and rhythm becomes a roadmap to recovery. Born from the ashes of addiction, isolation, and pain, our project exists to help others rise. Music isn't just sound here; it's therapy, truth, and expression. We use powerful tools like AI, immersive sound design, and raw human connection to help individuals reclaim their stories and rewrite their futures. Every beat we make carries intention. Every lyric, a revelation. Every session, a chance to feel human again.</p>
+    <p>Through blog posts, vlogs, and community collabs, we document the journey, the healing, and the hope. Whether you're lost, recovering, or simply seeking resonance—you're home now. Let Spectral Flow remind you: there is no such thing as too far gone. There's only the next note in your melody. And we're here to help you play it.</p>
+    <a href="/blog.html" class="btn">Visit the Blog</a>
+    <a href="/vlog.html" class="btn">Watch the Vlog</a>
+    <a href="/donate.html" class="btn">Support the Mission</a>
+  </section>
 </body>
 </html>
