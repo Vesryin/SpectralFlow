@@ -3,104 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spectral Flow</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Spectral Flow | A Music Sanctuary for Healing Souls</title>
   <style>
+    /* Reset & Base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f0f17, #1a1a2e);
+      background: linear-gradient(135deg, #0d0d14, #1a1a29, #0d0d14);
       color: #eee;
+      line-height: 1.6;
     }
-    header {
-      text-align: center;
-      padding: 4rem 2rem 2rem;
-    }
-    header img {
-      max-width: 300px;
-      height: auto;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 1rem 0 0.5rem;
-      color: #ff00cc;
-    }
-    p.lead {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 2rem;
-    }
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    nav a {
+    a { color: #ffcc00; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .container { width: 90%; max-width: 1000px; margin: 2rem auto; }
+    header { text-align: center; padding-bottom: 2rem; border-bottom: 1px solid #333; }
+    header .logos { display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 1rem; }
+    .logo { max-height: 120px; width: auto; }
+
+    /* Sections */
+    section { background: rgba(0,0,0,0.75); margin: 2rem 0; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+    section h2 { color: #ff00cc; margin-bottom: 1rem; }
+    section p { margin-bottom: 1rem; }
+    .mission ul { margin: 1rem 0 0 1.5rem; list-style: disc; }
+
+    /* Music & Social */
+    .music-player { text-align: center; margin: 4rem 0; } text-align: center; margin: 2rem 0; }
+    .social-links { text-align: center; margin: 1.5rem 0; }
+    .social-links a { margin: 0 0.75rem; font-weight: bold; }
+
+    /* Contact */
+    .contact-info { text-align: center; margin-top: 2rem; font-size: 1rem; }
+
+    /* Button */
+    .btn {
       display: inline-block;
-      margin: 0 1rem;
-      padding: 0.5rem 1.2rem;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
       background: #ff0066;
       color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
-    nav a:hover {
-      background: #ffd700;
-      color: #000;
-    }
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    section h2 {
-      color: #ffcc00;
-      margin-bottom: 1rem;
-    }
-    section p {
-      margin-bottom: 1rem;
-      color: #ddd;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
+    .btn:hover { background: #e6005c; }
+
+    footer { text-align: center; padding: 1.5rem 0; border-top: 1px solid #333; font-size: 0.9rem; opacity: 0.7; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="/IMAGES/spectralflowlogo.png"/>
-    <h1>Welcome to Spectral Flow</h1>
-    <p class="lead">Where music meets healing—powered by heart, community, and AI-driven support.</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Spectral Flow</h1>
+      <p><em>A Music Sanctuary for Healing Souls</em></p>
+      <div class="logos">
+        <img src="IMAGES/spectral_flow_creative_energy_in_motiona.png" alt="Spectral Flow Logo" class="logo" />
+        <img src="IMAGES/_416a03ee-97a7-47d9-bf87-4bf6b588ef29.jpg" alt="Spectral Flow Rainbow Logo" class="logo" />
+        <img src="IMAGES/Specflo.png" alt="Spectral Flow Audio Odyssey Logo" class="logo" />
+      </div>
+    </header>
 
-  <nav>
-    <a href="donate.html">Donate</a>
-    <a href="join.html">Join the Flow</a>
-    <a href="premium.html">VIP Lounge</a>
-  </nav>
+    <section class="bio">
+      <h2>About Richie</h2>
+      <p>I’m Richard “Richie” Olejniczak—a man who fought through drug addiction and the justice system, serving two years of a six-year sentence. Since age 16, I’ve seen cycles of crime, betrayal, and the loss of friends to overdose. It’s been six years clean, and I’m never going back.</p>
+      <p>Music became my lifeline: a healing drum that carried me through the darkest days. I stand on a foundation of integrity, honor, and empathy—lifting others as I’ve been lifted.</p>
+    </section>
 
-  <section>
-    <h2>About Spectral Flow</h2>
-    <p>Spectral Flow is a safe space where music becomes a sanctuary for those struggling with addiction, mental health, or simply the weight of life. We're here to remind you that you're not alone, and that healing can happen one beat at a time.</p>
-    <p>We combine music therapy, community, and AI-assisted guidance to provide a non-judgmental, informative, and deeply personal environment. Whether you're listening, creating, or just vibing—we've built this for you.</p>
-  </section>
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>At Spectral Flow, we believe every soul has its own melody. We blend sound and soul, using <strong>rhythm</strong>, <strong>AI-guided insight</strong>, and <strong>community</strong> to turn pain into power and chaos into creative flow.</p>
+      <ul>
+        <li>Express your truth through beats and soundscapes</li>
+        <li>Heal with the pulse of community and technology</li>
+        <li>Transform trauma into art and find belonging</li>
+      </ul>
+      <a href="#" class="btn">Join the Flow</a>
+    </section>
 
-  <section>
-    <h2>About Richie</h2>
-    <p>Hey, I’m Richie—just a passionate musician who's walked a tough road and is using music to help others do the same. I'm not a celebrity, just a person who believes in rhythm, honesty, and showing up for people in need. I’ve seen how music can save lives, including my own. I created Spectral Flow because I believe in second chances, and I want to offer hope through sound, connection, and expression.</p>
-  </section>
+    <section class="music-player">
+      <h2>Listen to Vesryin</h2>
+      <iframe src="https://open.spotify.com/embed/artist/5DgEK7UE6HR5LUNgIUiavl" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
 
-  <section>
-    <h2>Why AI?</h2>
-    <p>We use AI to help create a balanced and non-biased experience. From personalized support suggestions to creative collaborations, AI acts as a supportive advisor—not a replacement for real connection. It helps us focus more time on you and your journey.</p>
-  </section>
+    <section class="social-links">
+      <h2>Connect</h2>
+      <a href="https://soundcloud.com/remedium-music-118476266" target="_blank">SoundCloud</a> |
+      <a href="https://www.facebook.com/SpectralFlowAudioOdyssey/" target="_blank">Facebook</a> |
+      <a href="https://open.spotify.com/artist/5DgEK7UE6HR5LUNgIUiavl" target="_blank">Spotify</a> |
+      <a href="https://www.youtube.com/@Vesryin" target="_blank">YouTube</a>
+    </section>
 
-  <footer>
-    &copy; 2025 Remedium Music LLC &mdash; d/b/a Spectral Flow
-  </footer>
+    <section class="contact-info">
+      <p>📞 720-668-1208</p>
+      <p>✉️ <a href="mailto:remediummusic@gmail.com">remediummusic@gmail.com</a> | <a href="mailto:richiericholy@gmail.com">richiericholy@gmail.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Remedium Music LLC — d/b/a Spectral Flow
+    </footer>
+  </div>
 </body>
 </html>
