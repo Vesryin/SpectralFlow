@@ -1,69 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spectral Flow | Healing Through Music & Motion</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: radial-gradient(circle, #0d0d14, #1a1a29);
-      color: #f0f0f0;
-      line-height: 1.7;
-      padding: 2rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      color: #ff00cc;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-style: italic;
-      color: #ccc;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      margin-bottom: 3rem;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
-    h2 {
-      color: #ffcc00;
-    }
-    .btn {
-      display: inline-block;
-      background: #ff0066;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      margin-top: 1rem;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background: #e6005c;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Spectral Flow</h1>
-    <p>Creative Energy in Motion</p>
-  </header>
+// Spectral Flow - Ready-to-run React + Tailwind landing site
+// Includes your logo, tagline, about, donation placeholder, contact form
+// Paste this into your VS Code project (create-react-app, Vite, etc.) and run
 
-  <section>
-    <h2>Welcome to Spectral Flow</h2>
-    <p>Spectral Flow is more than a name—it's a sanctuary where trauma meets transformation, and rhythm becomes a roadmap to recovery. Born from the ashes of addiction, isolation, and pain, our project exists to help others rise. Music isn't just sound here; it's therapy, truth, and expression. We use powerful tools like AI, immersive sound design, and raw human connection to help individuals reclaim their stories and rewrite their futures. Every beat we make carries intention. Every lyric, a revelation. Every session, a chance to feel human again.</p>
-    <p>Through blog posts, vlogs, and community collabs, we document the journey, the healing, and the hope. Whether you're lost, recovering, or simply seeking resonance—you're home now. Let Spectral Flow remind you: there is no such thing as too far gone. There's only the next note in your melody. And we're here to help you play it.</p>
-    <a href="/blog.html" class="btn">Visit the Blog</a>
-    <a href="/vlog.html" class="btn">Watch the Vlog</a>
-    <a href="/donate.html" class="btn">Support the Mission</a>
-  </section>
-</body>
-</html>
+import React from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useState } from 'react';
+import spectralLogo from "./spectralflowlogo.png";
+
+export default function SpectralFlow() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you, ${email}, we will reach out soon!`);
+    setEmail("");
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-purple-900 via-indigo-800 to-blue-900 text-white p-4">
+      {/* Hero Section */}
+      <div className="text-center space-y-4 max-w-xl">
+        <img src={spectralLogo} alt="Spectral Flow Logo" className="w-48 mx-auto drop-shadow-xl rounded-2xl" />
+        <h1 className="text-4xl md:text-5xl font-bold">Spectral Flow</h1>
+        <p className="text-lg md:text-xl font-light italic">Express. Heal. Transform.</p>
+        <Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-3 rounded-2xl shadow-xl hover:scale-105 transition">Join the Sanctuary</Button>
+      </div>
+
+      {/* About Section */}
+      <div className="max-w-2xl mt-12 text-center space-y-4">
+        <h2 className="text-3xl font-semibold">A Sanctuary for Healing Souls</h2>
+        <p className="text-lg font-light">
+          Spectral Flow is dedicated to creative healing, music therapy, and emotional support through sound and community.
+          We provide a safe, inspiring space to express your truth, process emotions, and transform through music.
+        </p>
+      </div>
+
+      {/* Donation Section */}
+      <div className="mt-12 text-center">
+        <h2 className="text-2xl font-semibold mb-4">Support Our Mission</h2>
+        <a href="https://www.patreon.com/YourSpectralFlow" target="_blank" rel="noopener noreferrer">
+          <Button className="bg-gradient-to-r from-yellow-500 to-red-500 text-white px-6 py-3 rounded-2xl shadow-xl hover:scale-105 transition">Donate or Join on Patreon</Button>
+        </a>
+      </div>
+
+      {/* Contact Form */}
+      <div className="mt-12 max-w-md w-full">
+        <Card className="bg-white text-black shadow-2xl rounded-2xl p-6">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-4 text-center">Contact Us</h2>
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+              <Input
+                type="email"
+                placeholder="Your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <Button type="submit" className="bg-indigo-600 text-white px-4 py-2 rounded-xl hover:bg-indigo-700 transition">Send</Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Footer */}
+      <footer className="mt-12 text-center text-sm text-gray-300">
+        © 2025 Spectral Flow - Remedium Music LLC
+      </footer>
+    </div>
+  );
+}
