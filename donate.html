@@ -2,128 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support Spectral Flow</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support the Flow | Spectral Flow</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0d0d14, #1a1a29);
+      background-color: #111;
       color: #eee;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: 3rem auto;
+      font-family: 'Segoe UI', sans-serif;
       padding: 2rem;
-      background: rgba(0,0,0,0.75);
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-
-    h1, h2 {
       text-align: center;
-      color: #ff00cc;
+    }
+
+    h1 {
+      font-size: 2.5rem;
       margin-bottom: 1rem;
+      color: #FFD700;
     }
 
-    p {
-      margin-bottom: 1.5rem;
+    img {
+      max-width: 350px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      margin: 1rem auto;
     }
 
-    .donation-methods {
+    .donation-section {
+      margin-top: 2rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      align-items: center;
+      gap: 2rem;
     }
 
-    .donation-box {
-      background: rgba(255, 255, 255, 0.05);
+    .donate-option {
+      background-color: #1e1e1e;
       padding: 1.5rem;
+      border-radius: 15px;
+      max-width: 450px;
+      width: 90%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .cashapp-button {
+      background-color: #00d632;
+      color: black;
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
       border-radius: 10px;
-      border: 1px solid #333;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
     }
 
-    .donation-box h3 {
-      color: #ffcc00;
-      margin-bottom: 0.5rem;
+    .cashapp-button:hover {
+      background-color: #00b82a;
     }
 
-    .donation-box p, .donation-box a {
-      font-size: 1rem;
-      color: #ddd;
+    .contact {
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #bbb;
     }
 
-    .donation-box a {
-      color: #00c3ff;
-      text-decoration: underline;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 2rem;
-      background: #ff0066;
-      color: white;
-      font-weight: bold;
-      border-radius: 8px;
-      text-align: center;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #e6005c;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      font-size: 0.9rem;
-      opacity: 0.6;
+    a {
+      color: #FFD700;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Support the Flow</h1>
-    <p>
-      Every rhythm, every lyric, every heartbeat at Spectral Flow exists because of community. When you support us, you're not just funding music—you're uplifting people in recovery, amplifying unheard voices, and fueling a movement built on healing and purpose.
-    </p>
 
-    <section class="donation-methods">
-      <div class="donation-box">
-        <h3>💳 Donate with PayPal</h3>
-        <p><a href="https://www.paypal.com/donate" target="_blank">Click here to support via PayPal</a></p>
-      </div>
+  <h1>Donate Now or Glory Will Guilt Trip You 🐾</h1>
+  <p>Help support the mission of Spectral Flow and keep the creative fire alive!</p>
 
-      <div class="donation-box">
-        <h3>🌊 Join the Flow Monthly</h3>
-        <p>Become a sustaining supporter. Get early access to music drops, personal messages, behind-the-scenes vlogs, and special shoutouts from the community.</p>
-        <a href="#" class="btn">Subscribe Monthly</a>
-      </div>
+  <img src="IMAGES/GLORY.jpg" alt="Glory the Dog in a Hat" />
 
-      <div class="donation-box">
-        <h3>🎁 In-Kind Contributions</h3>
-        <p>
-          Got unused gear? Instruments, headphones, studio chairs, or laptops—we’ll give them new life in our sanctuary.
-          Email us to donate tangible tools that help others grow.
-        </p>
-        <p>✉️ <a href="mailto:remediummusic@gmail.com">remediummusic@gmail.com</a></p>
-      </div>
-    </section>
+  <div class="donation-section">
 
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="index.html" class="btn">Return to Home</a>
+    <!-- CashApp -->
+    <div class="donate-option">
+      <h2>Donate via Cash App</h2>
+      <p>Send your support to:</p>
+      <strong>$Olliekneechalk</strong>
+      <br/>
+      <a href="https://cash.app/$Olliekneechalk" target="_blank">
+        <button class="cashapp-button">Donate with Cash App</button>
+      </a>
     </div>
+
+    <!-- PayPal -->
+    <div class="donate-option">
+      <h2>Donate via PayPal</h2>
+      <!-- PayPal SDK Script -->
+      <script 
+        src="https://www.paypal.com/sdk/js?client-id=BAAYY898Oh_v3_PnHceMHjC6Ql19mHqdGWnFAsIl7FXMe-pToeEbQRu36uk70jeMIlmwM0MZTaF_yMMIfQ&components=hosted-buttons&enable-funding=venmo&currency=USD">
+      </script>
+
+      <!-- PayPal Hosted Button Container -->
+      <div id="paypal-container-8Y6EFKS46KX6C"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "8Y6EFKS46KX6C"
+        }).render("#paypal-container-8Y6EFKS46KX6C");
+      </script>
+    </div>
+
   </div>
 
-  <footer>
-    &copy; 2025 Remedium Music LLC &mdash; d/b/a Spectral Flow
-  </footer>
+  <div class="contact">
+    <p><strong>Contact:</strong> Richie Olejniczak – <a href="mailto:remediummusicllc@gmail.com">remediummusicllc@gmail.com</a></p>
+    <p>Follow my journey: @SpectralFlow</p>
+  </div>
+
 </body>
 </html>
